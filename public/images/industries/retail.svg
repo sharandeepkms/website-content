@@ -1,0 +1,14 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="120" height="120" rx="24" fill="url(#grad)"/>
+<path d="M36 44H84V50C84 52.2091 82.2091 54 80 54H40C37.7909 54 36 52.2091 36 50V44Z" stroke="white" stroke-width="4" stroke-linejoin="round"/>
+<path d="M44 54L46 78C46.1092 79.3098 47.2014 80.3251 48.5144 80.3251H71.4856C72.7986 80.3251 73.8908 79.3098 74 78L76 54" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="50" cy="86" r="4" fill="white"/>
+<circle cx="70" cy="86" r="4" fill="white"/>
+<defs>
+<linearGradient id="grad" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0041C2"/>
+<stop offset="1" stop-color="#00C2FF"/>
+</linearGradient>
+</defs>
+</svg>
+

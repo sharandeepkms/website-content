@@ -1,0 +1,41 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1224"/>
+      <stop offset="50%" stop-color="#0B1F40"/>
+      <stop offset="100%" stop-color="#0C2D5C"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0041C2"/>
+      <stop offset="100%" stop-color="#00C2FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <g opacity="0.4">
+    <circle cx="300" cy="200" r="180" fill="#0041C2"/>
+    <circle cx="1350" cy="250" r="220" fill="#00C2FF"/>
+    <circle cx="800" cy="750" r="260" fill="#0041C2"/>
+  </g>
+  <g fill="none" stroke="url(#accent)" stroke-width="2" opacity="0.5">
+    <path d="M200 650 C400 500 700 520 900 360"/>
+    <path d="M300 720 C520 560 880 600 1180 420"/>
+    <path d="M500 760 C760 600 1100 600 1350 480"/>
+  </g>
+  <g fill="none" stroke="#00C48C" stroke-width="2" opacity="0.6">
+    <rect x="250" y="320" width="180" height="80" rx="12"/>
+    <rect x="520" y="300" width="200" height="90" rx="12"/>
+    <rect x="820" y="260" width="210" height="90" rx="12"/>
+    <rect x="1120" y="240" width="200" height="90" rx="12"/>
+  </g>
+  <g fill="#E6F4FF" font-family="Inter, Arial, sans-serif">
+    <text x="260" y="370" font-size="20" font-weight="600">Spine</text>
+    <text x="530" y="350" font-size="20" font-weight="600">Leaf</text>
+    <text x="830" y="310" font-size="20" font-weight="600">VTEP / EVPN</text>
+    <text x="1130" y="290" font-size="20" font-weight="600">Telemetry</text>
+  </g>
+  <g fill="#FFFFFF" font-family="Inter, Arial, sans-serif">
+    <text x="220" y="160" font-size="48" font-weight="700">SONiC Open Networking</text>
+    <text x="220" y="220" font-size="24" opacity="0.85">Disaggregated NOS · EVPN-VXLAN · PFC/ECN · gNMI/OTel</text>
+  </g>
+</svg>
+

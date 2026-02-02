@@ -1,0 +1,78 @@
+<svg width="1200" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="nvmeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FACC15;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#00C48C;stop-opacity:0.1" />
+    </linearGradient>
+    <marker id="arrowNVMe" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#00C48C" />
+    </marker>
+  </defs>
+  
+  <rect width="1200" height="600" fill="url(#nvmeGrad)"/>
+  
+  <text x="600" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#0041C2">
+    NVMe-oF Data Flow
+  </text>
+  
+  <!-- Application Layer -->
+  <rect x="100" y="100" width="180" height="100" rx="10" fill="#0041C2" stroke="#002B7B" stroke-width="2"/>
+  <text x="190" y="135" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Application</text>
+  <text x="190" y="160" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#B3D9FF">AI/ML Training</text>
+  <text x="190" y="180" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#B3D9FF">Data Pipeline</text>
+  
+  <!-- NVMe Driver -->
+  <rect x="350" y="100" width="180" height="100" rx="10" fill="#00C2FF" stroke="#0041C2" stroke-width="2"/>
+  <text x="440" y="135" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#001B47">NVMe Driver</text>
+  <text x="440" y="160" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#475569">Kernel/User-space</text>
+  <text x="440" y="180" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#475569">NVMe-oF Initiator</text>
+  
+  <!-- Transport Layer -->
+  <rect x="600" y="100" width="180" height="100" rx="10" fill="#00C48C" stroke="#0041C2" stroke-width="2"/>
+  <text x="690" y="130" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Transport</text>
+  <text x="690" y="155" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#E6FFF5">NVMe/TCP</text>
+  <text x="690" y="175" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#E6FFF5">NVMe/RDMA</text>
+  <text x="690" y="190" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#E6FFF5">NVMe/FC</text>
+  
+  <!-- Network -->
+  <rect x="850" y="100" width="180" height="100" rx="10" fill="#5A5EFF" stroke="#0041C2" stroke-width="2"/>
+  <text x="940" y="135" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Network</text>
+  <text x="940" y="160" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#E0E0FF">Ethernet</text>
+  <text x="940" y="180" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#E0E0FF">InfiniBand</text>
+  
+  <!-- NVMe Target -->
+  <rect x="600" y="280" width="180" height="100" rx="10" fill="#00C48C" stroke="#0041C2" stroke-width="2"/>
+  <text x="690" y="315" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">NVMe Target</text>
+  <text x="690" y="340" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#E6FFF5">SPDK / Linux</text>
+  <text x="690" y="360" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#E6FFF5">Target Software</text>
+  
+  <!-- Storage Backend -->
+  <rect x="600" y="440" width="180" height="100" rx="10" fill="#FACC15" stroke="#0041C2" stroke-width="2"/>
+  <text x="690" y="475" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#001B47">Storage</text>
+  <text x="690" y="500" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#001B47">Backend</text>
+  <text x="690" y="525" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#475569">NVMe SSDs</text>
+  
+  <!-- Flow Arrows -->
+  <line x1="280" y1="150" x2="350" y2="150" stroke="#0041C2" stroke-width="3" marker-end="url(#arrowNVMe)"/>
+  <line x1="530" y1="150" x2="600" y2="150" stroke="#00C2FF" stroke-width="3" marker-end="url(#arrowNVMe)"/>
+  <line x1="780" y1="150" x2="850" y2="150" stroke="#00C48C" stroke-width="3" marker-end="url(#arrowNVMe)"/>
+  <line x1="940" y1="200" x2="690" y2="280" stroke="#5A5EFF" stroke-width="3" marker-end="url(#arrowNVMe)"/>
+  <line x1="690" y1="380" x2="690" y2="440" stroke="#00C48C" stroke-width="3" marker-end="url(#arrowNVMe)"/>
+  
+  <!-- Performance Metrics -->
+  <rect x="100" y="280" width="250" height="120" rx="10" fill="white" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="225" y="310" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#0041C2">Performance</text>
+  <text x="225" y="335" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#475569">Latency: &lt; 100μs</text>
+  <text x="225" y="355" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#475569">Throughput: 100Gbps+</text>
+  <text x="225" y="375" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#475569">IOPS: &gt; 1M</text>
+  <text x="225" y="390" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#475569">Queue Depth: 64K</text>
+  
+  <!-- Use Cases -->
+  <rect x="400" y="280" width="150" height="120" rx="10" fill="white" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="475" y="310" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#0041C2">Use Cases</text>
+  <text x="475" y="335" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#475569">AI/ML Training</text>
+  <text x="475" y="355" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#475569">Database</text>
+  <text x="475" y="375" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#475569">High-Performance</text>
+  <text x="475" y="390" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#475569">Computing</text>
+</svg>
+

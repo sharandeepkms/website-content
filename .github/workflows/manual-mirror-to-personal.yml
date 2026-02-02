@@ -1,0 +1,43 @@
+name: Manual Mirror to Personal Repo (No History)
+
+on:
+  workflow_dispatch:
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout staging-content repo
+        uses: actions/checkout@v4
+
+      - name: Configure Git identity
+        run: |
+          git config --global user.name "Mirror Bot"
+          git config --global user.email "mirror-bot@users.noreply.github.com"
+
+      - name: Setup SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.MIRROR_SSH_KEY }}" | tr -d '\r' > ~/.ssh/id_ed25519
+          chmod 600 ~/.ssh/id_ed25519
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
+
+      - name: Create clean snapshot (no history, no secrets)
+        run: |
+          git checkout --orphan mirror-main
+          git rm -rf .
+          git checkout main -- .
+
+          # 🚫 Remove secret-containing / dev-only files
+          rm -f scripts/test-hf-token.js
+          rm -f scripts/test-single-image.js
+          rm -f scripts/generate-hero-slider-images.js
+
+          git add .
+          git commit -m "Mirror snapshot (secrets removed)"
+
+      - name: Push snapshot to personal repo
+        run: |
+          git remote add mirror git@github.com:sharandeepkms/website-content.git
+          git push mirror mirror-main:main --force

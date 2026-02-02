@@ -1,0 +1,678 @@
+export interface CaseStudy {
+  id: string
+  slug: string
+  title: string
+  summary: string
+  featuredImage?: string
+  industry: string
+  tags: string[]
+  date: string
+  background: string
+  challenges: string[]
+  solution: string
+  implementation: Array<{ step: string; description: string }>
+  results: {
+    kpis: Array<{ metric: string; value: string; improvement?: string }>
+    description: string
+  }
+  technologies: string[]
+  expert?: {
+    name: string
+    title: string
+    avatar?: string
+    bio?: string
+  }
+  pdfUrl?: string
+}
+
+export const caseStudies: CaseStudy[] = [
+  {
+    id: '1',
+    slug: 'dpdk-ipsec-security-gateway',
+    title: 'DPDK IPSec Security Gateway',
+    summary: 'In today\'s digital age, maintaining network security without sacrificing speed is crucial. The Data Plane Development Kit (DPDK) offers a solution by enabling faster packet processing through the bypassing of traditional kernel-based methods.',
+    featuredImage: '/images/case-studies/dpdk-ipsec-security-gateway.png',
+    industry: 'Security',
+    tags: ['DPDK', 'IPSec', 'Security', 'Performance'],
+    date: '2024-09-05',
+    background: 'In today\'s digital age, maintaining network security without sacrificing speed is crucial. The Data Plane Development Kit (DPDK) offers a solution by enabling faster packet processing through the bypassing of traditional kernel-based methods. This capability is essential for high-performance security gateways.',
+    challenges: [
+      'Traditional kernel-based packet processing limitations',
+      'Performance bottlenecks in security gateways',
+      'Need for high-speed IPSec processing',
+      'Balancing security and performance requirements',
+    ],
+    solution: 'Implemented DPDK-based IPSec security gateway solution that bypasses traditional kernel methods, enabling faster packet processing while maintaining robust security protocols.',
+    implementation: [
+      { step: 'Architecture Design', description: 'Design DPDK-based packet processing architecture' },
+      { step: 'IPSec Integration', description: 'Integrate IPSec protocols with DPDK framework' },
+      { step: 'Performance Optimization', description: 'Optimize packet processing for high throughput' },
+      { step: 'Testing & Validation', description: 'Comprehensive testing of security and performance' },
+    ],
+    results: {
+      kpis: [
+        { metric: 'Packet Processing Speed', value: 'Significantly improved', improvement: 'DPDK bypass' },
+        { metric: 'Security Compliance', value: '100%', improvement: 'Full IPSec support' },
+      ],
+      description: 'Successfully implemented high-performance IPSec security gateway using DPDK technology.',
+    },
+    technologies: ['DPDK', 'IPSec', 'Security Gateway', 'Packet Processing'],
+    pdfUrl: '/pdfs/case-studies/dpdk-ipsec-security-gateway.pdf',
+  },
+  {
+    id: '2',
+    slug: 'cord-pon-aggregation-switch',
+    title: 'CORD PON Aggregation Switch',
+    summary: 'The CORD (Central Office Re-architected as a Datacenter) platform leverages SDN, NFV and Cloud technologies to build agile datacenters for the network edge.',
+    featuredImage: '/images/case-studies/cord-pon-aggregation-switch.png',
+    industry: 'Telecommunications',
+    tags: ['CORD', 'PON', 'SDN', 'NFV', 'Edge'],
+    date: '2024-07-10',
+    background: 'The CORD (Central Office Re-architected as a Datacenter) platform leverages SDN, NFV and Cloud technologies to build agile datacenters for the network edge. Integrating multiple open source projects, CORD delivers a cloud-native, open, programmable, agile platform for service providers.',
+    challenges: [
+      'Traditional central office infrastructure limitations',
+      'Need for edge datacenter capabilities',
+      'Integration of multiple open source projects',
+      'Cloud-native platform requirements',
+    ],
+    solution: 'Deployed CORD platform with PON aggregation switch capabilities, integrating SDN, NFV, and Cloud technologies to create an agile, programmable edge datacenter solution.',
+    implementation: [
+      { step: 'Platform Integration', description: 'Integrate SDN, NFV, and Cloud technologies' },
+      { step: 'PON Switch Deployment', description: 'Deploy PON aggregation switch components' },
+      { step: 'Open Source Integration', description: 'Integrate multiple open source CORD projects' },
+      { step: 'Cloud-Native Setup', description: 'Configure cloud-native platform architecture' },
+    ],
+    results: {
+      kpis: [
+        { metric: 'Platform Agility', value: 'Significantly improved', improvement: 'Cloud-native architecture' },
+        { metric: 'Edge Capabilities', value: 'Full support', improvement: 'CORD platform' },
+      ],
+      description: 'Successfully deployed CORD PON aggregation switch enabling agile edge datacenter capabilities.',
+    },
+    technologies: ['CORD', 'PON', 'SDN', 'NFV', 'Cloud'],
+    pdfUrl: '/pdfs/case-studies/cord-pon-aggregation-switch.pdf',
+  },
+  {
+    id: '3',
+    slug: 'white-box-packet-optical-nos',
+    title: 'White Box Packet Optical NOS',
+    summary: 'The project undertaken by PalC Networks to enhance existing White-box commercial NOS to support the hardware design of open packet transponder along with programming and managing the coherent optical devices.',
+    featuredImage: '/images/case-studies/white-box-packet-optical-nos.png',
+    industry: 'Telecommunications',
+    tags: ['White Box', 'Packet Optical', 'NOS', 'DWDM'],
+    date: '2024-07-10',
+    background: 'The project undertaken by PalC Networks to enhance existing White-box commercial NOS to support the hardware design of open packet transponder along with programming and managing the coherent optical devices. The packet optical DWDM switch has 100GbE packet switching capabilities.',
+    challenges: [
+      'Enhancing existing White-box NOS capabilities',
+      'Supporting open packet transponder hardware',
+      'Programming and managing coherent optical devices',
+      '100GbE packet switching requirements',
+    ],
+    solution: 'Enhanced White-box commercial NOS to support open packet transponder hardware design, including programming and management of coherent optical devices for DWDM applications.',
+    implementation: [
+      { step: 'Hardware Analysis', description: 'Analyze open packet transponder hardware design' },
+      { step: 'NOS Enhancement', description: 'Enhance NOS to support new hardware' },
+      { step: 'Optical Device Integration', description: 'Integrate coherent optical device programming' },
+      { step: 'Testing & Validation', description: 'Test 100GbE packet switching capabilities' },
+    ],
+    results: {
+      kpis: [
+        { metric: 'Hardware Support', value: 'Full support', improvement: 'Open packet transponder' },
+        { metric: 'Packet Switching', value: '100GbE', improvement: 'DWDM capabilities' },
+      ],
+      description: 'Successfully enhanced White-box NOS with packet optical capabilities and coherent optical device management.',
+    },
+    technologies: ['White Box NOS', 'Packet Optical', 'DWDM', '100GbE'],
+    pdfUrl: '/pdfs/case-studies/white-box-packet-optical-nos.pdf',
+  },
+  {
+    id: '4',
+    slug: 'goldstone-oopt-nos',
+    title: 'Goldstone – OOPT NOS',
+    summary: 'This document describes the project undertaken by PalC Networks in bringing open source NOS for OOPT TIP group.',
+    featuredImage: '/images/case-studies/goldstone-oopt-nos.png',
+    industry: 'Telecommunications',
+    tags: ['Goldstone', 'OOPT', 'NOS', 'Open Source', 'TIP'],
+    date: '2024-07-10',
+    background: 'This document describes the project undertaken by PalC Networks in bringing open source NOS for OOPT TIP group. The OOPT-NOS group focuses on a reference open source Network Operating System (NOS) that supports OOPT disaggregated hardware platforms.',
+    challenges: [
+      'Developing open source NOS for OOPT',
+      'Supporting disaggregated hardware platforms',
+      'Reference implementation requirements',
+      'TIP group specifications compliance',
+    ],
+    solution: 'Developed Goldstone open source NOS for OOPT TIP group, providing reference implementation that supports OOPT disaggregated hardware platforms.',
+    implementation: [
+      { step: 'Requirements Analysis', description: 'Analyze OOPT TIP group requirements' },
+      { step: 'NOS Development', description: 'Develop open source NOS reference implementation' },
+      { step: 'Hardware Support', description: 'Implement support for disaggregated hardware' },
+      { step: 'Validation', description: 'Validate against TIP specifications' },
+    ],
+    results: {
+      kpis: [
+        { metric: 'Open Source Compliance', value: '100%', improvement: 'Reference implementation' },
+        { metric: 'Hardware Support', value: 'OOPT platforms', improvement: 'Disaggregated support' },
+      ],
+      description: 'Successfully delivered Goldstone open source NOS for OOPT TIP group with full hardware platform support.',
+    },
+    technologies: ['Goldstone', 'OOPT', 'Open Source NOS', 'TIP'],
+    pdfUrl: '/pdfs/case-studies/goldstone-oopt-nos.pdf',
+  },
+  {
+    id: '5',
+    slug: 'segment-routing-development',
+    title: 'Segment Routing Development',
+    summary: 'Segment Routing is a new source routing technology that will add benefit to IP and MPLS networks.',
+    featuredImage: '/images/case-studies/segment-routing-development.png',
+    industry: 'Networking',
+    tags: ['Segment Routing', 'IP', 'MPLS', 'SDN'],
+    date: '2024-07-10',
+    background: 'Segment Routing is a new source routing technology that will add benefit to IP and MPLS networks. It will allow to have FRR protection for any topology, simpler to operate and more scalable. For future SDN services it provides a foundation for network programmability.',
+    challenges: [
+      'Implementing new source routing technology',
+      'FRR protection for any topology',
+      'Simplified network operations',
+      'SDN service foundation requirements',
+    ],
+    solution: 'Developed Segment Routing implementation that provides FRR protection for any topology, simplified operations, improved scalability, and foundation for SDN services.',
+    implementation: [
+      { step: 'Protocol Design', description: 'Design Segment Routing protocol implementation' },
+      { step: 'FRR Integration', description: 'Implement FRR protection mechanisms' },
+      { step: 'SDN Integration', description: 'Integrate with SDN controller for programmability' },
+      { step: 'Testing', description: 'Test topology protection and scalability' },
+    ],
+    results: {
+      kpis: [
+        { metric: 'FRR Protection', value: 'Any topology', improvement: 'Universal protection' },
+        { metric: 'Scalability', value: 'Improved', improvement: 'Segment Routing benefits' },
+        { metric: 'SDN Foundation', value: 'Established', improvement: 'Network programmability' },
+      ],
+      description: 'Successfully developed Segment Routing solution providing enhanced protection, scalability, and SDN foundation.',
+    },
+    technologies: ['Segment Routing', 'IP/MPLS', 'FRR', 'SDN'],
+    pdfUrl: '/pdfs/case-studies/segment-routing-development.pdf',
+  },
+  {
+    id: '6',
+    slug: 'white-box-nos-porting',
+    title: 'White Box NOS Porting',
+    summary: 'This document describes the project undertaken by PalC Networks for one of their esteemed client to port their commercial whitebox Open Compute NOS to a new chipset.',
+    featuredImage: '/images/case-studies/white-box-nos-porting.png',
+    industry: 'Data Center',
+    tags: ['White Box', 'NOS', 'Porting', 'Open Compute'],
+    date: '2024-07-09',
+    background: 'This document describes the project undertaken by PalC Networks for one of their esteemed client to port their commercial whitebox Open Compute NOS (Network Operating System) to a new chipset for Data Center deployment, which has the port density as required by the client.',
+    challenges: [
+      'Porting NOS to new chipset architecture',
+      'Maintaining port density requirements',
+      'Data Center deployment compatibility',
+      'Open Compute compliance',
+    ],
+    solution: 'Successfully ported commercial whitebox Open Compute NOS to new chipset while maintaining required port density and Data Center deployment capabilities.',
+    implementation: [
+      { step: 'Chipset Analysis', description: 'Analyze new chipset architecture and capabilities' },
+      { step: 'NOS Porting', description: 'Port NOS to new chipset platform' },
+      { step: 'Port Density Validation', description: 'Validate port density requirements' },
+      { step: 'Data Center Testing', description: 'Test Data Center deployment scenarios' },
+    ],
+    results: {
+      kpis: [
+        { metric: 'Port Density', value: 'Requirements met', improvement: 'Client specifications' },
+        { metric: 'Compatibility', value: '100%', improvement: 'Data Center deployment' },
+      ],
+      description: 'Successfully ported White Box NOS to new chipset with full port density and deployment capabilities.',
+    },
+    technologies: ['White Box NOS', 'Open Compute', 'Chipset Porting', 'Data Center'],
+    pdfUrl: '/pdfs/case-studies/white-box-nos-porting.pdf',
+  },
+  {
+    id: '7',
+    slug: 'egress-qos',
+    title: 'Egress QoS',
+    summary: 'The key to providing QoS in the new service architectures is the ability to differentiate traffic and to provide differentiated service levels based on the types of traffic.',
+    featuredImage: '/images/case-studies/egress-qos.png',
+    industry: 'Networking',
+    tags: ['QoS', 'Traffic Management', 'Service Architecture'],
+    date: '2024-07-09',
+    background: 'The key to providing QoS in the new service architectures is the ability to differentiate traffic and to provide differentiated service levels based on the types of traffic. For example, for real-time applications such as voice over IP (VoIP), the network needs to provide low latency and jitter guarantees.',
+    challenges: [
+      'Traffic differentiation requirements',
+      'Differentiated service levels for various traffic types',
+      'Real-time application QoS guarantees',
+      'Low latency and jitter for VoIP',
+    ],
+    solution: 'Implemented egress QoS solution that differentiates traffic types and provides appropriate service levels, ensuring low latency and jitter for real-time applications like VoIP.',
+    implementation: [
+      { step: 'Traffic Classification', description: 'Implement traffic classification mechanisms' },
+      { step: 'QoS Policies', description: 'Define QoS policies for different traffic types' },
+      { step: 'Egress Queue Management', description: 'Configure egress queue management' },
+      { step: 'Performance Validation', description: 'Validate latency and jitter for real-time apps' },
+    ],
+    results: {
+      kpis: [
+        { metric: 'Latency', value: 'Low', improvement: 'VoIP optimized' },
+        { metric: 'Jitter', value: 'Minimal', improvement: 'Real-time guarantees' },
+        { metric: 'Traffic Differentiation', value: 'Full support', improvement: 'Multiple service levels' },
+      ],
+      description: 'Successfully implemented egress QoS providing differentiated service levels for various traffic types.',
+    },
+    technologies: ['QoS', 'Traffic Management', 'VoIP', 'Service Architecture'],
+    pdfUrl: '/pdfs/case-studies/egress-qos.pdf',
+  },
+  {
+    id: '8',
+    slug: 'open-cord-r-cord-deployment',
+    title: 'Open CORD / R-CORD Deployment',
+    summary: 'The CORD (Central Office Re-architected as a Datacenter) platform leverages SDN, NFV and Cloud technologies to build agile datacenters for the network edge.',
+    featuredImage: '/images/case-studies/open-cord-r-cord-deployment.png',
+    industry: 'Telecommunications',
+    tags: ['CORD', 'R-CORD', 'SDN', 'NFV', 'Edge'],
+    date: '2024-07-09',
+    background: 'The CORD (Central Office Re-architected as a Datacenter) platform leverages SDN, NFV and Cloud technologies to build agile datacenters for the network edge. Integrating multiple open source projects, CORD delivers a cloud-native, open, programmable, agile platform.',
+    challenges: [
+      'CORD platform deployment complexity',
+      'R-CORD specific requirements',
+      'Integration of multiple open source components',
+      'Edge datacenter capabilities',
+    ],
+    solution: 'Deployed Open CORD and R-CORD platforms leveraging SDN, NFV, and Cloud technologies to create agile, programmable edge datacenter infrastructure.',
+    implementation: [
+      { step: 'Platform Planning', description: 'Plan CORD/R-CORD deployment architecture' },
+      { step: 'Component Integration', description: 'Integrate SDN, NFV, and Cloud components' },
+      { step: 'R-CORD Configuration', description: 'Configure R-CORD specific features' },
+      { step: 'Edge Deployment', description: 'Deploy at network edge locations' },
+    ],
+    results: {
+      kpis: [
+        { metric: 'Platform Agility', value: 'Significantly improved', improvement: 'Cloud-native' },
+        { metric: 'Edge Capabilities', value: 'Full support', improvement: 'CORD platform' },
+      ],
+      description: 'Successfully deployed Open CORD/R-CORD platform enabling agile edge datacenter capabilities.',
+    },
+    technologies: ['CORD', 'R-CORD', 'SDN', 'NFV', 'Cloud'],
+    pdfUrl: '/pdfs/case-studies/open-cord-r-cord-deployment.pdf',
+  },
+  {
+    id: '9',
+    slug: 'network-management',
+    title: 'Network Management',
+    summary: 'In today\'s world, the term network management and monitoring are widespread throughout the IT industry.',
+    featuredImage: '/images/case-studies/network-management.png',
+    industry: 'IT Operations',
+    tags: ['Network Management', 'Monitoring', 'Fault Analysis'],
+    date: '2024-07-09',
+    background: 'In today\'s world, the term network management and monitoring are widespread throughout the IT industry. Network management is the process of administering and managing computer networks. Services provided by this discipline include fault analysis, performance management, provisioning of networks and maintaining quality of service.',
+    challenges: [
+      'Comprehensive network administration',
+      'Fault analysis and troubleshooting',
+      'Performance management',
+      'Network provisioning',
+      'Quality of service maintenance',
+    ],
+    solution: 'Implemented comprehensive network management solution providing fault analysis, performance management, network provisioning, and QoS maintenance capabilities.',
+    implementation: [
+      { step: 'Management Platform', description: 'Deploy network management platform' },
+      { step: 'Fault Analysis Tools', description: 'Implement fault analysis and monitoring' },
+      { step: 'Performance Management', description: 'Configure performance monitoring and reporting' },
+      { step: 'Provisioning Automation', description: 'Automate network provisioning processes' },
+    ],
+    results: {
+      kpis: [
+        { metric: 'Fault Detection', value: 'Improved', improvement: 'Automated analysis' },
+        { metric: 'Performance Visibility', value: 'Full', improvement: 'Comprehensive monitoring' },
+        { metric: 'Provisioning Speed', value: 'Faster', improvement: 'Automated processes' },
+      ],
+      description: 'Successfully implemented network management solution with comprehensive administration and monitoring capabilities.',
+    },
+    technologies: ['Network Management', 'Monitoring', 'Fault Analysis', 'Performance Management'],
+    pdfUrl: '/pdfs/case-studies/network-management.pdf',
+  },
+  {
+    id: '10',
+    slug: 'network-analytics',
+    title: 'Network Analytics',
+    summary: 'Network Analytics is a practice of the collecting and analyzing different types of network data like network events, state information, packets etc.',
+    featuredImage: '/images/case-studies/network-analytics.png',
+    industry: 'IT Operations',
+    tags: ['Network Analytics', 'Data Analysis', 'Threat Detection'],
+    date: '2024-07-09',
+    background: 'Network Analytics is a practice of the collecting and analyzing different types of network data like network events, state information, packets etc. to identify threats, trends, pattern of the network. This information will be later used to predict any real-time network issues and security threats.',
+    challenges: [
+      'Collecting diverse network data types',
+      'Analyzing network events and state information',
+      'Threat identification and detection',
+      'Pattern recognition for network trends',
+      'Real-time issue prediction',
+    ],
+    solution: 'Implemented network analytics solution that collects and analyzes network events, state information, and packets to identify threats, trends, and patterns for proactive network issue prediction.',
+    implementation: [
+      { step: 'Data Collection', description: 'Implement data collection from multiple sources' },
+      { step: 'Analytics Engine', description: 'Deploy analytics engine for pattern recognition' },
+      { step: 'Threat Detection', description: 'Configure threat detection algorithms' },
+      { step: 'Predictive Analysis', description: 'Implement predictive analytics for issue prevention' },
+    ],
+    results: {
+      kpis: [
+        { metric: 'Threat Detection', value: 'Improved', improvement: 'Automated analysis' },
+        { metric: 'Pattern Recognition', value: 'Advanced', improvement: 'Trend identification' },
+        { metric: 'Issue Prediction', value: 'Real-time', improvement: 'Proactive management' },
+      ],
+      description: 'Successfully implemented network analytics providing comprehensive threat detection and predictive capabilities.',
+    },
+    technologies: ['Network Analytics', 'Data Analysis', 'Threat Detection', 'Predictive Analytics'],
+    pdfUrl: '/pdfs/case-studies/network-analytics.pdf',
+  },
+  {
+    id: '11',
+    slug: 'cloud-native-application-development',
+    title: 'Cloud Native Application Development',
+    summary: 'For starters, we need to understand the difference between cloud based and cloud native application development.',
+    featuredImage: '/images/case-studies/cloud-native-application-development.png',
+    industry: 'Cloud',
+    tags: ['Cloud Native', 'Containers', 'Microservices', 'DevOps'],
+    date: '2024-07-09',
+    background: 'For starters, we need to understand the difference between cloud based and cloud native application development. Cloud-native development refers to application development that is container-based, dynamically orchestrated, and leverages microservices architectures. Because cloud-native applications run in containers and are dynamically orchestrated, they take full advantage of the cloud computing model.',
+    challenges: [
+      'Understanding cloud-native vs cloud-based development',
+      'Container-based architecture implementation',
+      'Dynamic orchestration requirements',
+      'Microservices architecture design',
+      'Leveraging cloud computing model',
+    ],
+    solution: 'Developed cloud-native applications using container-based architecture, dynamic orchestration, and microservices to fully leverage cloud computing capabilities.',
+    implementation: [
+      { step: 'Architecture Design', description: 'Design container-based microservices architecture' },
+      { step: 'Containerization', description: 'Containerize application components' },
+      { step: 'Orchestration Setup', description: 'Configure dynamic orchestration platform' },
+      { step: 'Cloud Integration', description: 'Integrate with cloud computing services' },
+    ],
+    results: {
+      kpis: [
+        { metric: 'Scalability', value: 'Dynamic', improvement: 'Cloud-native architecture' },
+        { metric: 'Deployment Speed', value: 'Faster', improvement: 'Container orchestration' },
+        { metric: 'Resource Utilization', value: 'Optimized', improvement: 'Cloud computing model' },
+      ],
+      description: 'Successfully developed cloud-native applications leveraging containers, orchestration, and microservices.',
+    },
+    technologies: ['Cloud Native', 'Containers', 'Kubernetes', 'Microservices', 'DevOps'],
+    pdfUrl: '/pdfs/case-studies/cloud-native-application-development.pdf',
+  },
+  {
+    id: '12',
+    slug: 'falca',
+    title: 'Falca',
+    summary: 'FALCA is an Indian origin agricultural commodities online market facilitating company.',
+    featuredImage: '/images/case-studies/falca.png',
+    industry: 'Agriculture',
+    tags: ['E-Commerce', 'Agriculture', 'Supply Chain'],
+    date: '2024-07-09',
+    background: 'FALCA is an Indian origin agricultural commodities online market facilitating company. The objective behind is to address one of the major problems farmer\'s have been facing all these years, i.e., fair and seamless marketing of their agricultural produce. FALCA, through its platform, enables farmers to connect directly with buyers.',
+    challenges: [
+      'Fair marketing of agricultural produce',
+      'Connecting farmers directly with buyers',
+      'Seamless online marketplace operations',
+      'Agricultural commodity trading platform',
+    ],
+    solution: 'Developed FALCA agricultural commodities online marketplace platform enabling fair and seamless marketing of agricultural produce, connecting farmers directly with buyers.',
+    implementation: [
+      { step: 'Platform Design', description: 'Design online marketplace platform architecture' },
+      { step: 'Farmer Integration', description: 'Implement farmer onboarding and listing features' },
+      { step: 'Buyer Connectivity', description: 'Enable direct buyer-farmer connections' },
+      { step: 'Trading System', description: 'Implement commodity trading and payment systems' },
+    ],
+    results: {
+      kpis: [
+        { metric: 'Farmer Connectivity', value: 'Direct', improvement: 'Marketplace platform' },
+        { metric: 'Fair Marketing', value: 'Enabled', improvement: 'Seamless operations' },
+      ],
+      description: 'Successfully developed FALCA platform enabling fair agricultural commodity trading.',
+    },
+    technologies: ['E-Commerce', 'Agriculture', 'Supply Chain', 'Online Marketplace'],
+    pdfUrl: '/pdfs/case-studies/falca.pdf',
+  },
+  {
+    id: '13',
+    slug: 'supply-chain-solution',
+    title: 'Supply Chain Solution',
+    summary: 'FALCA is an Indian origin agricultural commodities online market facilitating company addressing farmer marketing challenges.',
+    featuredImage: '/images/case-studies/supply-chain-solution.png',
+    industry: 'Agriculture',
+    tags: ['Supply Chain', 'Agriculture', 'Logistics'],
+    date: '2024-07-09',
+    background: 'FALCA is an Indian origin agricultural commodities online market facilitating company. The objective behind is to address one of the major problems farmer\'s have been facing all these years, i.e., fair and seamless marketing of their agricultural produce. FALCA, through its platform, enables farmers to connect directly with buyers through an efficient supply chain solution.',
+    challenges: [
+      'Agricultural supply chain efficiency',
+      'Logistics and distribution management',
+      'Connecting farmers with buyers',
+      'Supply chain visibility',
+    ],
+    solution: 'Implemented comprehensive supply chain solution for agricultural commodities, enabling efficient logistics, distribution, and direct farmer-buyer connections.',
+    implementation: [
+      { step: 'Supply Chain Design', description: 'Design agricultural supply chain architecture' },
+      { step: 'Logistics Integration', description: 'Integrate logistics and distribution systems' },
+      { step: 'Visibility Platform', description: 'Implement supply chain visibility tools' },
+      { step: 'Farmer-Buyer Network', description: 'Enable direct connections and transactions' },
+    ],
+    results: {
+      kpis: [
+        { metric: 'Supply Chain Efficiency', value: 'Improved', improvement: 'Streamlined logistics' },
+        { metric: 'Visibility', value: 'Full', improvement: 'End-to-end tracking' },
+      ],
+      description: 'Successfully implemented supply chain solution improving agricultural commodity distribution.',
+    },
+    technologies: ['Supply Chain', 'Logistics', 'Agriculture', 'Distribution'],
+    pdfUrl: '/pdfs/case-studies/supply-chain-solution.pdf',
+  },
+  {
+    id: '14',
+    slug: 'build-time-optimization',
+    title: 'Build Time Optimization',
+    summary: 'The source-code consists of multiple components: the basic Linux-kernel, the control-plane, data-plane code, tool-chains and third party packages.',
+    featuredImage: '/images/case-studies/build-time-optimization.png',
+    industry: 'Software Development',
+    tags: ['Build Optimization', 'CI/CD', 'DevOps'],
+    date: '2024-07-09',
+    background: 'The source-code consists of multiple components: the basic Linux-kernel, the control-plane, data-plane code, tool-chains and third party packages. All of these will be built one after the other for specified hardware target/controller and the complete time taken to produce a final build image is the build time.',
+    challenges: [
+      'Sequential build process inefficiency',
+      'Multiple component dependencies',
+      'Long build times',
+      'Hardware target-specific builds',
+    ],
+    solution: 'Optimized build process by parallelizing component builds, optimizing dependencies, and implementing build caching to significantly reduce build time.',
+    implementation: [
+      { step: 'Build Analysis', description: 'Analyze current build process and bottlenecks' },
+      { step: 'Parallelization', description: 'Implement parallel build processes' },
+      { step: 'Dependency Optimization', description: 'Optimize component dependencies' },
+      { step: 'Build Caching', description: 'Implement build caching mechanisms' },
+    ],
+    results: {
+      kpis: [
+        { metric: 'Build Time', value: 'Significantly reduced', improvement: 'Optimization techniques' },
+        { metric: 'Efficiency', value: 'Improved', improvement: 'Parallel builds' },
+      ],
+      description: 'Successfully optimized build time through parallelization and dependency optimization.',
+    },
+    technologies: ['Build Optimization', 'CI/CD', 'DevOps', 'Build Systems'],
+    pdfUrl: '/pdfs/case-studies/build-time-optimization.pdf',
+  },
+  {
+    id: '15',
+    slug: 'real-time-video-streaming',
+    title: 'Real-Time Video Streaming',
+    summary: 'Streaming Media may be defined as listening or viewing media in real time as it comes across the World Wide Web.',
+    featuredImage: '/images/case-studies/real-time-video-streaming.png',
+    industry: 'Media',
+    tags: ['Video Streaming', 'CDN', 'Real-Time', 'Media'],
+    date: '2024-07-09',
+    background: 'Streaming Media may be defined as listening or viewing media in real time as it comes across the World Wide Web. With streaming technology, users can watch and listen to media while it is being sent to their browser, instead of waiting for the entire file to download.',
+    challenges: [
+      'Real-time media delivery',
+      'Bandwidth optimization',
+      'Low latency requirements',
+      'Scalable streaming infrastructure',
+    ],
+    solution: 'Implemented real-time video streaming solution with optimized CDN, low-latency delivery, and scalable infrastructure enabling users to watch media while it\'s being sent.',
+    implementation: [
+      { step: 'Streaming Infrastructure', description: 'Deploy streaming infrastructure and CDN' },
+      { step: 'Latency Optimization', description: 'Optimize for low-latency delivery' },
+      { step: 'Bandwidth Management', description: 'Implement bandwidth optimization techniques' },
+      { step: 'Scalability Setup', description: 'Configure scalable streaming architecture' },
+    ],
+    results: {
+      kpis: [
+        { metric: 'Latency', value: 'Low', improvement: 'Real-time delivery' },
+        { metric: 'User Experience', value: 'Improved', improvement: 'Streaming technology' },
+        { metric: 'Scalability', value: 'High', improvement: 'CDN infrastructure' },
+      ],
+      description: 'Successfully implemented real-time video streaming solution with optimized delivery and user experience.',
+    },
+    technologies: ['Video Streaming', 'CDN', 'Real-Time', 'Media Delivery'],
+    pdfUrl: '/pdfs/case-studies/real-time-video-streaming.pdf',
+  },
+  {
+    id: '16',
+    slug: 'transport-technology-software-development',
+    title: 'Transport Technology Software Development',
+    summary: 'Segment Routing is a new source routing technology that will add benefit to IP and MPLS networks.',
+    featuredImage: '/images/case-studies/transport-technology-software-development.png',
+    industry: 'Networking',
+    tags: ['Transport Technology', 'Segment Routing', 'IP/MPLS'],
+    date: '2024-07-09',
+    background: 'Segment Routing is a new source routing technology that will add benefit to IP and MPLS networks. It will allow to have FRR protection for any topology, simpler to operate and more scalable. For future SDN services it provides a foundation for network programmability.',
+    challenges: [
+      'Transport technology software development',
+      'Segment Routing implementation',
+      'FRR protection mechanisms',
+      'SDN service foundation',
+    ],
+    solution: 'Developed transport technology software with Segment Routing capabilities, providing FRR protection, simplified operations, and SDN service foundation.',
+    implementation: [
+      { step: 'Software Architecture', description: 'Design transport technology software architecture' },
+      { step: 'Segment Routing Implementation', description: 'Implement Segment Routing protocols' },
+      { step: 'FRR Integration', description: 'Integrate FRR protection mechanisms' },
+      { step: 'SDN Foundation', description: 'Establish SDN service foundation' },
+    ],
+    results: {
+      kpis: [
+        { metric: 'FRR Protection', value: 'Universal', improvement: 'Any topology' },
+        { metric: 'Operational Simplicity', value: 'Improved', improvement: 'Simplified operations' },
+        { metric: 'SDN Foundation', value: 'Established', improvement: 'Network programmability' },
+      ],
+      description: 'Successfully developed transport technology software with Segment Routing and SDN capabilities.',
+    },
+    technologies: ['Transport Technology', 'Segment Routing', 'IP/MPLS', 'SDN'],
+    pdfUrl: '/pdfs/case-studies/transport-technology-software-development.pdf',
+  },
+  {
+    id: '17',
+    slug: 'onf-voltha-olt-certification-procedure',
+    title: 'ONF VOLTHA OLT Certification Procedure',
+    summary: 'ONT stands for Optical Network Terminal. An ONT is the device that serves as the telecommunication chain\'s endpoint of the PON on your end.',
+    featuredImage: '/images/case-studies/onf-voltha-olt-certification-procedure.png',
+    industry: 'Telecommunications',
+    tags: ['VOLTHA', 'OLT', 'PON', 'ONF'],
+    date: '2024-07-09',
+    background: 'ONT stands for Optical Network Terminal. An ONT is the device that serves as the telecommunication chain\'s endpoint of the PON on your end. Another abbreviation to know is an ONU, which stands for Optical Network Unit. ONU and ONT are essentially the same device. VOLTHA is an open source project that provides a platform for managing PON networks.',
+    challenges: [
+      'VOLTHA OLT certification requirements',
+      'PON network management',
+      'ONT/ONU device compatibility',
+      'Open source platform integration',
+    ],
+    solution: 'Developed ONF VOLTHA OLT certification procedure ensuring compatibility with PON networks, ONT/ONU devices, and open source VOLTHA platform.',
+    implementation: [
+      { step: 'Certification Framework', description: 'Develop VOLTHA OLT certification framework' },
+      { step: 'PON Integration', description: 'Integrate with PON network infrastructure' },
+      { step: 'Device Compatibility', description: 'Ensure ONT/ONU device compatibility' },
+      { step: 'Platform Validation', description: 'Validate open source VOLTHA platform integration' },
+    ],
+    results: {
+      kpis: [
+        { metric: 'Certification Compliance', value: '100%', improvement: 'ONF standards' },
+        { metric: 'Device Compatibility', value: 'Full', improvement: 'ONT/ONU support' },
+      ],
+      description: 'Successfully developed ONF VOLTHA OLT certification procedure with full PON network compatibility.',
+    },
+    technologies: ['VOLTHA', 'OLT', 'PON', 'ONF', 'Open Source'],
+    pdfUrl: '/pdfs/case-studies/onf-voltha-olt-certification-procedure.pdf',
+  },
+  {
+    id: '18',
+    slug: 'porting-commercial-nos-marvell-gen6',
+    title: 'Porting commercial-NOS on to Marvell Gen-6 switching ASICs',
+    summary: 'This case study focuses on porting a commercial Network Operating System (NOS) that is already supported on Marvell Gen-5 switching ASICs to Marvell Gen-6 devices.',
+    featuredImage: '/images/case-studies/porting-commercial-nos-marvell-gen6.png',
+    industry: 'Data Center',
+    tags: ['NOS Porting', 'Marvell', 'ASIC', 'Data Center'],
+    date: '2024-07-09',
+    background: 'This case study focuses on porting a commercial Network Operating System (NOS) that is already supported on Marvell Gen-5 switching ASICs (AC3X, Aldrin, Aldrin2) to Marvell Gen-6 devices (AC5X/P, Aldrin3, Falcon, etc.). The typical deployment of this NOS is for Data Center networking applications.',
+    challenges: [
+      'Porting NOS from Gen-5 to Gen-6 ASICs',
+      'Supporting new Marvell chipset families',
+      'Maintaining Data Center deployment capabilities',
+      'AC5X/P, Aldrin3, Falcon device support',
+    ],
+    solution: 'Successfully ported commercial NOS from Marvell Gen-5 to Gen-6 switching ASICs, enabling support for AC5X/P, Aldrin3, Falcon, and other Gen-6 devices for Data Center deployments.',
+    implementation: [
+      { step: 'ASIC Analysis', description: 'Analyze Gen-6 ASIC architecture and differences' },
+      { step: 'NOS Porting', description: 'Port NOS to Gen-6 ASIC platform' },
+      { step: 'Device Support', description: 'Implement support for Gen-6 device families' },
+      { step: 'Data Center Validation', description: 'Validate Data Center deployment scenarios' },
+    ],
+    results: {
+      kpis: [
+        { metric: 'ASIC Support', value: 'Gen-6', improvement: 'AC5X/P, Aldrin3, Falcon' },
+        { metric: 'Data Center Compatibility', value: '100%', improvement: 'Full deployment support' },
+      ],
+      description: 'Successfully ported commercial NOS to Marvell Gen-6 switching ASICs with full device family support.',
+    },
+    technologies: ['NOS Porting', 'Marvell ASIC', 'Gen-6', 'Data Center'],
+    pdfUrl: '/pdfs/case-studies/porting-commercial-nos-marvell-gen6.pdf',
+  },
+  {
+    id: '19',
+    slug: 'sonic-deployment-national-scale-digital-payments-modernization',
+    title: 'SONiC Deployment for National-Scale Digital Payments Modernization',
+    summary: 'In today\'s digital age, maintaining network security without sacrificing speed is crucial.',
+    featuredImage: '/images/case-studies/sonic-deployment-national-scale-digital-payments-modernization.png',
+    industry: 'Financial Services',
+    tags: ['SONiC', 'Digital Payments', 'Network Security', 'Modernization'],
+    date: '2024-09-10',
+    background: 'In today\'s digital age, maintaining network security without sacrificing speed is crucial. This case study focuses on deploying SONiC (Software for Open Networking in the Cloud) for national-scale digital payments modernization, ensuring high-performance network infrastructure while maintaining robust security protocols.',
+    challenges: [
+      'National-scale network deployment requirements',
+      'Maintaining network security without performance compromise',
+      'Digital payments infrastructure modernization',
+      'High-performance network demands',
+      'Scalability for payment processing systems',
+    ],
+    solution: 'Deployed SONiC-based network infrastructure for national-scale digital payments modernization, providing high-performance networking capabilities while maintaining robust security protocols essential for financial transactions.',
+    implementation: [
+      { step: 'Architecture Design', description: 'Design SONiC-based network architecture for digital payments' },
+      { step: 'Security Integration', description: 'Implement security protocols without performance compromise' },
+      { step: 'Scalability Setup', description: 'Configure scalable network infrastructure for national-scale deployment' },
+      { step: 'Testing & Validation', description: 'Comprehensive testing of security and performance requirements' },
+    ],
+    results: {
+      kpis: [
+        { metric: 'Network Performance', value: 'High-speed maintained', improvement: 'SONiC optimization' },
+        { metric: 'Security Compliance', value: '100%', improvement: 'Robust security protocols' },
+        { metric: 'Scalability', value: 'National-scale', improvement: 'SONiC deployment' },
+      ],
+      description: 'Successfully deployed SONiC for national-scale digital payments modernization with high performance and security.',
+    },
+    technologies: ['SONiC', 'Open Networking', 'Digital Payments', 'Network Security'],
+    pdfUrl: '/pdfs/case-studies/sonic-deployment-national-scale-digital-payments-modernization.pdf',
+  },
+]
+
+export function getCaseStudyBySlug(slug: string): CaseStudy | undefined {
+  return caseStudies.find(study => study.slug === slug)
+}
+
+export function getRelatedCaseStudies(currentSlug: string, limit: number = 3): CaseStudy[] {
+  return caseStudies
+    .filter(study => study.slug !== currentSlug)
+    .slice(0, limit)
+}

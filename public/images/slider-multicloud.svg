@@ -1,0 +1,59 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06091a"/>
+      <stop offset="50%" stop-color="#0b1130"/>
+      <stop offset="100%" stop-color="#0a0f24"/>
+    </linearGradient>
+    <linearGradient id="link" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="250" cy="200" r="200" fill="#0f172a" opacity="0.2"/>
+  <circle cx="1350" cy="680" r="240" fill="#0f172a" opacity="0.18"/>
+
+  <text x="140" y="180" fill="#c084fc" font-size="20" font-family="Inter, Arial, sans-serif" letter-spacing="6">MULTI-CLOUD AUTOMATION</text>
+  <text x="140" y="245" fill="#F8FAFC" font-size="60" font-family="Inter, Arial, sans-serif" font-weight="700">Pipelines Across Clouds</text>
+  <text x="140" y="305" fill="#CBD5E1" font-size="26" font-family="Inter, Arial, sans-serif">Automated interconnects, policy-as-code, and observability.</text>
+  <rect x="140" y="340" width="260" height="6" rx="3" fill="url(#link)"/>
+
+  <!-- Cloud nodes -->
+  <g>
+    <ellipse cx="420" cy="520" rx="110" ry="70" fill="#7c3aed" opacity="0.15"/>
+    <text x="380" y="525" fill="#e0e7ff" font-size="22" font-family="Inter, Arial, sans-serif" font-weight="600">AWS</text>
+  </g>
+  <g>
+    <ellipse cx="720" cy="430" rx="110" ry="70" fill="#22d3ee" opacity="0.18"/>
+    <text x="675" y="435" fill="#e0f2fe" font-size="22" font-family="Inter, Arial, sans-serif" font-weight="600">Azure</text>
+  </g>
+  <g>
+    <ellipse cx="1020" cy="520" rx="110" ry="70" fill="#a855f7" opacity="0.16"/>
+    <text x="980" y="525" fill="#f3e8ff" font-size="22" font-family="Inter, Arial, sans-serif" font-weight="600">GCP</text>
+  </g>
+  <g>
+    <ellipse cx="1320" cy="430" rx="110" ry="70" fill="#22c55e" opacity="0.14"/>
+    <text x="1260" y="435" fill="#dcfce7" font-size="22" font-family="Inter, Arial, sans-serif" font-weight="600">Edge</text>
+  </g>
+
+  <!-- Links -->
+  <path d="M420 520 C 520 460, 620 460, 720 430" stroke="url(#link)" stroke-width="6" stroke-linecap="round"/>
+  <path d="M720 430 C 860 430, 920 470, 1020 520" stroke="url(#link)" stroke-width="6" stroke-linecap="round"/>
+  <path d="M1020 520 C 1160 490, 1240 470, 1320 430" stroke="url(#link)" stroke-width="6" stroke-linecap="round"/>
+  <path d="M720 430 C 920 360, 1120 360, 1320 430" stroke="url(#link)" stroke-width="4" stroke-linecap="round" opacity="0.6"/>
+  <path d="M420 520 C 620 600, 920 620, 1320 430" stroke="url(#link)" stroke-width="4" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- Automation nodes -->
+  <circle cx="570" cy="470" r="8" fill="#22d3ee"/>
+  <circle cx="820" cy="450" r="8" fill="#7c3aed"/>
+  <circle cx="920" cy="500" r="8" fill="#22d3ee"/>
+  <circle cx="1180" cy="460" r="8" fill="#7c3aed"/>
+
+  <!-- Pipeline label -->
+  <rect x="140" y="410" width="320" height="120" rx="18" fill="#0b1224" stroke="#1f2937" stroke-width="2" opacity="0.9"/>
+  <text x="170" y="455" fill="#c7d2fe" font-size="16" font-family="Inter, Arial, sans-serif" letter-spacing="3">AUTOMATION PIPELINE</text>
+  <text x="170" y="488" fill="#E5E7EB" font-size="22" font-family="Inter, Arial, sans-serif" font-weight="600">IaC / GitOps / Policy-as-Code</text>
+  <text x="170" y="518" fill="#94A3B8" font-size="18" font-family="Inter, Arial, sans-serif">Pre/post checks, drift detection, SLO dashboards</text>
+</svg>
+

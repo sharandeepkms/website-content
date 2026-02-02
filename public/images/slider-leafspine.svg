@@ -1,0 +1,56 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050B18"/>
+      <stop offset="50%" stop-color="#0A1734"/>
+      <stop offset="100%" stop-color="#061021"/>
+    </linearGradient>
+    <linearGradient id="link" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4"/>
+      <stop offset="100%" stop-color="#22c55e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="240" cy="720" r="260" fill="#0f172a" opacity="0.18"/>
+  <circle cx="1380" cy="200" r="240" fill="#0f172a" opacity="0.2"/>
+
+  <text x="140" y="180" fill="#67e8f9" font-size="20" font-family="Inter, Arial, sans-serif" letter-spacing="6">LEAF-SPINE AI FABRIC</text>
+  <text x="140" y="245" fill="#F8FAFC" font-size="60" font-family="Inter, Arial, sans-serif" font-weight="700">High-Performance EVPN/SRv6</text>
+  <text x="140" y="305" fill="#CBD5E1" font-size="26" font-family="Inter, Arial, sans-serif">SONiC switches, RoCE-ready QoS, and telemetry-driven assurance.</text>
+  <rect x="140" y="340" width="260" height="6" rx="3" fill="url(#link)"/>
+
+  <!-- Spine nodes -->
+  <g transform="translate(520 360)">
+    <circle cx="220" cy="0" r="18" fill="#0ea5e9"/>
+    <circle cx="420" cy="0" r="18" fill="#22c55e"/>
+  </g>
+
+  <!-- Leaf nodes -->
+  <g transform="translate(520 360)">
+    <circle cx="120" cy="160" r="16" fill="#06b6d4"/>
+    <circle cx="220" cy="160" r="16" fill="#06b6d4"/>
+    <circle cx="320" cy="160" r="16" fill="#06b6d4"/>
+    <circle cx="420" cy="160" r="16" fill="#06b6d4"/>
+  </g>
+
+  <!-- Links -->
+  <path d="M740 360 C 720 400, 660 440, 640 520" stroke="url(#link)" stroke-width="5" stroke-linecap="round" opacity="0.9"/>
+  <path d="M740 360 C 740 420, 740 440, 740 520" stroke="url(#link)" stroke-width="5" stroke-linecap="round" opacity="0.9"/>
+  <path d="M740 360 C 760 400, 820 440, 840 520" stroke="url(#link)" stroke-width="5" stroke-linecap="round" opacity="0.9"/>
+
+  <path d="M940 360 C 880 400, 760 440, 640 520" stroke="url(#link)" stroke-width="5" stroke-linecap="round" opacity="0.6"/>
+  <path d="M940 360 C 940 420, 940 440, 740 520" stroke="url(#link)" stroke-width="5" stroke-linecap="round" opacity="0.6"/>
+  <path d="M940 360 C 1000 400, 1120 440, 840 520" stroke="url(#link)" stroke-width="5" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- Traffic glow -->
+  <circle cx="640" cy="520" r="8" fill="#22c55e"/>
+  <circle cx="740" cy="520" r="8" fill="#06b6d4"/>
+  <circle cx="840" cy="520" r="8" fill="#22c55e"/>
+
+  <!-- Validation block -->
+  <rect x="140" y="420" width="320" height="130" rx="18" fill="#0b1224" stroke="#1f2937" stroke-width="2" opacity="0.9"/>
+  <text x="170" y="460" fill="#a5f3fc" font-size="16" font-family="Inter, Arial, sans-serif" letter-spacing="3">AI WORKLOADS</text>
+  <text x="170" y="490" fill="#E5E7EB" font-size="22" font-family="Inter, Arial, sans-serif" font-weight="600">Loss-aware QoS, ECN/RED, PFC watchdog</text>
+  <text x="170" y="520" fill="#94A3B8" font-size="18" font-family="Inter, Arial, sans-serif">Telemetry-driven SLOs and validation pipelines</text>
+</svg>
+

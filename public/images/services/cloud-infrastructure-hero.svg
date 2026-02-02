@@ -1,0 +1,40 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-ci" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1224"/>
+      <stop offset="100%" stop-color="#0C2746"/>
+    </linearGradient>
+    <linearGradient id="ci-accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0041C2"/>
+      <stop offset="100%" stop-color="#00C2FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg-ci)"/>
+  <g opacity="0.45">
+    <circle cx="360" cy="260" r="210" fill="#0041C2"/>
+    <circle cx="1260" cy="300" r="240" fill="#00C2FF"/>
+    <circle cx="840" cy="760" r="260" fill="#0041C2"/>
+  </g>
+  <g fill="none" stroke="url(#ci-accent)" stroke-width="2" opacity="0.65">
+    <path d="M240 620 C520 520 940 520 1240 420"/>
+    <path d="M360 700 C640 560 980 560 1340 460"/>
+    <path d="M520 740 C820 600 1180 600 1400 520"/>
+  </g>
+  <g fill="none" stroke="#00C48C" stroke-width="2" opacity="0.6">
+    <rect x="240" y="360" width="190" height="90" rx="12"/>
+    <rect x="520" y="330" width="200" height="90" rx="12"/>
+    <rect x="820" y="310" width="210" height="90" rx="12"/>
+    <rect x="1120" y="300" width="200" height="90" rx="12"/>
+  </g>
+  <g fill="#E7F5FF" font-family="Inter, Arial, sans-serif">
+    <text x="250" y="410" font-size="20" font-weight="600">VPC / VNet</text>
+    <text x="530" y="380" font-size="20" font-weight="600">Transit / GW</text>
+    <text x="830" y="360" font-size="20" font-weight="600">Managed K8s</text>
+    <text x="1130" y="350" font-size="20" font-weight="600">Observability</text>
+  </g>
+  <g fill="#FFFFFF" font-family="Inter, Arial, sans-serif">
+    <text x="220" y="170" font-size="48" font-weight="700">Cloud Infrastructure Engineering</text>
+    <text x="220" y="230" font-size="24" opacity="0.85">IaC · Kubernetes · Networking · Security · Observability · DR</text>
+  </g>
+</svg>
+

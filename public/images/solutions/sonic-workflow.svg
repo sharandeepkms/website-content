@@ -1,0 +1,85 @@
+<svg width="1200" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="workflowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0041C2;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#00C2FF;stop-opacity:0.1" />
+    </linearGradient>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#0041C2" />
+    </marker>
+  </defs>
+  
+  <rect width="1200" height="600" fill="url(#workflowGrad)"/>
+  
+  <text x="600" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#0041C2">
+    SONiC Deployment Workflow
+  </text>
+  
+  <!-- Workflow Steps -->
+  <g id="workflow-steps">
+    <!-- Step 1: Hardware Bring-up -->
+    <rect x="50" y="100" width="180" height="120" rx="10" fill="#0041C2" stroke="#002B7B" stroke-width="2"/>
+    <text x="140" y="135" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">1. Hardware</text>
+    <text x="140" y="155" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Bring-up</text>
+    <text x="140" y="180" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#B3D9FF">Physical installation</text>
+    <text x="140" y="195" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#B3D9FF">and power-on</text>
+    
+    <!-- Step 2: ONIE Installation -->
+    <rect x="280" y="100" width="180" height="120" rx="10" fill="#00C2FF" stroke="#0041C2" stroke-width="2"/>
+    <text x="370" y="135" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#001B47">2. ONIE</text>
+    <text x="370" y="155" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#001B47">Installation</text>
+    <text x="370" y="180" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#475569">Open Network</text>
+    <text x="370" y="195" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#475569">Install Environment</text>
+    
+    <!-- Step 3: Base Image Build -->
+    <rect x="510" y="100" width="180" height="120" rx="10" fill="#00C2FF" stroke="#0041C2" stroke-width="2"/>
+    <text x="600" y="135" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#001B47">3. Base Image</text>
+    <text x="600" y="155" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#001B47">Build</text>
+    <text x="600" y="180" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#475569">SONiC compilation</text>
+    <text x="600" y="195" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#475569">and customization</text>
+    
+    <!-- Step 4: SONiC Deployment -->
+    <rect x="740" y="100" width="180" height="120" rx="10" fill="#00C2FF" stroke="#0041C2" stroke-width="2"/>
+    <text x="830" y="135" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#001B47">4. SONiC Image</text>
+    <text x="830" y="155" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#001B47">Deployment</text>
+    <text x="830" y="180" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#475569">Image installation</text>
+    <text x="830" y="195" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#475569">via ONIE or USB</text>
+    
+    <!-- Step 5: Provisioning -->
+    <rect x="970" y="100" width="180" height="120" rx="10" fill="#00C2FF" stroke="#0041C2" stroke-width="2"/>
+    <text x="1060" y="135" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#001B47">5. Provisioning</text>
+    <text x="1060" y="155" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#001B47">Engine</text>
+    <text x="1060" y="180" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#475569">Automated config</text>
+    <text x="1060" y="195" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#475569">management</text>
+    
+    <!-- Step 6: EVPN-VXLAN -->
+    <rect x="280" y="280" width="180" height="120" rx="10" fill="#5A5EFF" stroke="#0041C2" stroke-width="2"/>
+    <text x="370" y="315" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">6. EVPN-VXLAN</text>
+    <text x="370" y="335" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Config</text>
+    <text x="370" y="360" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#E0E0FF">Layer 2/3 overlay</text>
+    <text x="370" y="375" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#E0E0FF">network config</text>
+    
+    <!-- Step 7: Telemetry -->
+    <rect x="510" y="280" width="180" height="120" rx="10" fill="#5A5EFF" stroke="#0041C2" stroke-width="2"/>
+    <text x="600" y="315" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">7. Telemetry</text>
+    <text x="600" y="335" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Pipeline</text>
+    <text x="600" y="360" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#E0E0FF">gNMI, OTel,</text>
+    <text x="600" y="375" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#E0E0FF">Prometheus</text>
+  </g>
+  
+  <!-- Arrows -->
+  <line x1="230" y1="160" x2="280" y2="160" stroke="#0041C2" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="460" y1="160" x2="510" y2="160" stroke="#0041C2" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="690" y1="160" x2="740" y2="160" stroke="#0041C2" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="920" y1="160" x2="970" y2="160" stroke="#0041C2" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="1060" y1="220" x2="370" y2="280" stroke="#0041C2" stroke-width="3" marker-end="url(#arrowhead)"/>
+  <line x1="460" y1="340" x2="510" y2="340" stroke="#0041C2" stroke-width="3" marker-end="url(#arrowhead)"/>
+  
+  <!-- Production Ready Badge -->
+  <rect x="800" y="280" width="200" height="120" rx="10" fill="#00C48C" stroke="#0041C2" stroke-width="2"/>
+  <text x="900" y="320" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Production</text>
+  <text x="900" y="340" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Ready</text>
+  <text x="900" y="365" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#E6FFF5">Fully configured</text>
+  <text x="900" y="380" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#E6FFF5">and operational</text>
+</svg>
+

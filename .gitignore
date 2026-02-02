@@ -1,0 +1,69 @@
+*_IMAGES.md
+*_REQUIRED.md
+scroll-stack-test.html
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+.yarn/install-state.gz
+
+AI_ASSISTANT_IMPROVEMENTS.md
+HOMEPAGE_SLIDER_RESPONSIVE_FIX.md
+WEBSITE_WIDTH_SYSTEM.md
+
+
+# Testing
+/coverage
+
+# Next.js
+/.next/
+/out/
+
+# Production
+/build
+
+# Misc
+.DS_Store
+*.pem
+*.key
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local env files
+.env
+.env.*
+.env*.local
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Data files (form submissions)
+/data/*.json
+!/data/.gitkeep
+ENV_SETUP.txt
+
+# Test scripts
+scripts/test-*.js
+
+# Image generation guides (may contain tokens)
+GENERATE_SLIDER_IMAGES.md
+SLIDER_IMAGES_GUIDE.md
+IMAGE_GENERATION_GUIDE.md
+scripts/HF_SETUP.md
+scripts/QUICK_START.md
+
+*.backup
+*.log
+*_ANALYSIS*.md
+CONTENT_ANALYSIS_FEEDBACK.md
+PROJECT_ANALYSIS_AND_RECOMMENDATIONS.md
+start-dev-server.ps1
+
+

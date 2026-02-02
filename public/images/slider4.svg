@@ -1,0 +1,35 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050B18"/>
+      <stop offset="50%" stop-color="#0A1734"/>
+      <stop offset="100%" stop-color="#051225"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4ade80"/>
+      <stop offset="100%" stop-color="#22c55e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1400" cy="200" r="220" fill="#0f172a" opacity="0.18"/>
+  <circle cx="200" cy="650" r="260" fill="#0f172a" opacity="0.15"/>
+  <text x="140" y="190" fill="#9CA3AF" font-size="20" font-family="Inter, Arial, sans-serif" letter-spacing="6">PALC NETWORKS</text>
+  <text x="140" y="260" fill="#F8FAFC" font-size="62" font-family="Inter, Arial, sans-serif" font-weight="700">Secure & Observable Networking</text>
+  <text x="140" y="330" fill="#CBD5E1" font-size="28" font-family="Inter, Arial, sans-serif">Zero-trust overlays, telemetry-first operations, and AI-ready security.</text>
+  <rect x="140" y="370" width="240" height="6" rx="3" fill="url(#accent)"/>
+  <rect x="140" y="440" width="420" height="200" rx="24" fill="#0b1224" stroke="#1f2937" stroke-width="2" opacity="0.9"/>
+  <text x="180" y="500" fill="#A5B4FC" font-size="16" font-family="Inter, Arial, sans-serif" letter-spacing="3">FOCUS AREAS</text>
+  <text x="180" y="540" fill="#E5E7EB" font-size="24" font-family="Inter, Arial, sans-serif" font-weight="600">Zero Trust • Segmentation • Observability</text>
+  <text x="180" y="580" fill="#94A3B8" font-size="18" font-family="Inter, Arial, sans-serif">Microsegmentation, ZTNA edges, INT/gNMI telemetry,</text>
+  <text x="180" y="610" fill="#94A3B8" font-size="18" font-family="Inter, Arial, sans-serif">and closed-loop assurance across DC, cloud, and edge.</text>
+  <rect x="860" y="320" width="520" height="320" rx="28" fill="#0b1224" stroke="#1f2937" stroke-width="2" opacity="0.95"/>
+  <text x="900" y="380" fill="#A5B4FC" font-size="16" font-family="Inter, Arial, sans-serif" letter-spacing="3">ARCHITECTURE</text>
+  <text x="900" y="420" fill="#E5E7EB" font-size="22" font-family="Inter, Arial, sans-serif" font-weight="600">Policy → Telemetry → Automation</text>
+  <text x="900" y="455" fill="#94A3B8" font-size="18" font-family="Inter, Arial, sans-serif">Identity-driven policies, streaming telemetry to SLO dashboards,</text>
+  <text x="900" y="485" fill="#94A3B8" font-size="18" font-family="Inter, Arial, sans-serif">and runbook automation for faster MTTR.</text>
+  <rect x="900" y="520" width="200" height="10" rx="5" fill="url(#accent)"/>
+  <rect x="1140" y="520" width="120" height="10" rx="5" fill="#1f2937"/>
+  <rect x="900" y="550" width="260" height="10" rx="5" fill="#1f2937"/>
+  <rect x="900" y="580" width="320" height="10" rx="5" fill="url(#accent)"/>
+</svg>
+

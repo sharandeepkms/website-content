@@ -1,0 +1,62 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050B18"/>
+      <stop offset="50%" stop-color="#0A1734"/>
+      <stop offset="100%" stop-color="#061021"/>
+    </linearGradient>
+    <linearGradient id="fabric" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#22c55e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1350" cy="220" r="240" fill="#0f172a" opacity="0.22"/>
+  <circle cx="260" cy="680" r="280" fill="#0f172a" opacity="0.18"/>
+  <text x="140" y="190" fill="#9CA3AF" font-size="20" font-family="Inter, Arial, sans-serif" letter-spacing="6">AI-READY DATA CENTER</text>
+  <text x="140" y="260" fill="#F8FAFC" font-size="62" font-family="Inter, Arial, sans-serif" font-weight="700">Glowing SONiC Fabric</text>
+  <text x="140" y="320" fill="#CBD5E1" font-size="26" font-family="Inter, Arial, sans-serif">Disaggregated switches, observability-rich links, and cloud interconnects.</text>
+  <rect x="140" y="360" width="280" height="6" rx="3" fill="url(#fabric)"/>
+
+  <!-- Racks -->
+  <g transform="translate(180 420)">
+    <rect x="0" y="0" width="140" height="260" rx="14" fill="#0b1224" stroke="#1f2937" stroke-width="2"/>
+    <rect x="30" y="30" width="80" height="12" rx="6" fill="#111827"/>
+    <rect x="30" y="60" width="80" height="12" rx="6" fill="#111827"/>
+    <rect x="30" y="90" width="80" height="12" rx="6" fill="#111827"/>
+    <rect x="30" y="120" width="80" height="12" rx="6" fill="#111827"/>
+    <rect x="30" y="150" width="80" height="12" rx="6" fill="#111827"/>
+    <rect x="30" y="180" width="80" height="12" rx="6" fill="#111827"/>
+  </g>
+  <g transform="translate(360 420)">
+    <rect x="0" y="0" width="140" height="260" rx="14" fill="#0b1224" stroke="#1f2937" stroke-width="2"/>
+    <rect x="30" y="30" width="80" height="12" rx="6" fill="#111827"/>
+    <rect x="30" y="60" width="80" height="12" rx="6" fill="#111827"/>
+    <rect x="30" y="90" width="80" height="12" rx="6" fill="#111827"/>
+    <rect x="30" y="120" width="80" height="12" rx="6" fill="#111827"/>
+    <rect x="30" y="150" width="80" height="12" rx="6" fill="#111827"/>
+    <rect x="30" y="180" width="80" height="12" rx="6" fill="#111827"/>
+  </g>
+
+  <!-- Fabric links -->
+  <path d="M320 460 C 520 360, 760 360, 1020 480" stroke="url(#fabric)" stroke-width="6" stroke-linecap="round" opacity="0.9"/>
+  <path d="M320 540 C 540 520, 820 520, 1100 540" stroke="url(#fabric)" stroke-width="6" stroke-linecap="round" opacity="0.7"/>
+  <path d="M320 620 C 560 660, 860 660, 1140 620" stroke="url(#fabric)" stroke-width="6" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- Cloud holograms -->
+  <g opacity="0.9">
+    <ellipse cx="1240" cy="420" rx="120" ry="70" fill="#0ea5e9" opacity="0.12"/>
+    <text x="1180" y="430" fill="#e0f2fe" font-size="22" font-family="Inter, Arial, sans-serif" font-weight="600">Cloud</text>
+  </g>
+  <g opacity="0.9">
+    <ellipse cx="1380" cy="540" rx="110" ry="60" fill="#22c55e" opacity="0.12"/>
+    <text x="1330" y="548" fill="#dcfce7" font-size="22" font-family="Inter, Arial, sans-serif" font-weight="600">Edge</text>
+  </g>
+
+  <!-- Fibre glow -->
+  <circle cx="740" cy="500" r="8" fill="#38bdf8"/>
+  <circle cx="880" cy="520" r="8" fill="#22c55e"/>
+  <circle cx="1040" cy="480" r="8" fill="#38bdf8"/>
+  <circle cx="960" cy="620" r="8" fill="#22c55e"/>
+</svg>
+

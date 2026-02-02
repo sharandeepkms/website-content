@@ -1,0 +1,39 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-do" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1224"/>
+      <stop offset="100%" stop-color="#0B1F3A"/>
+    </linearGradient>
+    <linearGradient id="do-accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#EF4444"/>
+      <stop offset="50%" stop-color="#FACC15"/>
+      <stop offset="100%" stop-color="#00C2FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg-do)"/>
+  <g opacity="0.45">
+    <circle cx="350" cy="250" r="200" fill="#EF4444"/>
+    <circle cx="820" cy="260" r="220" fill="#FACC15"/>
+    <circle cx="1250" cy="320" r="240" fill="#00C2FF"/>
+    <circle cx="820" cy="760" r="260" fill="#0041C2"/>
+  </g>
+  <g fill="none" stroke="url(#do-accent)" stroke-width="2" opacity="0.65">
+    <path d="M260 620 C520 520 940 520 1220 420"/>
+    <path d="M360 700 C640 560 980 560 1340 460"/>
+  </g>
+  <g fill="none" stroke="#00C48C" stroke-width="2" opacity="0.6">
+    <rect x="240" y="360" width="180" height="90" rx="12"/>
+    <rect x="520" y="340" width="180" height="90" rx="12"/>
+    <rect x="820" y="320" width="180" height="90" rx="12"/>
+  </g>
+  <g fill="#E7F5FF" font-family="Inter, Arial, sans-serif">
+    <text x="250" y="410" font-size="20" font-weight="600">Hot Tier NVMe</text>
+    <text x="530" y="390" font-size="20" font-weight="600">Warm SSD Tier</text>
+    <text x="830" y="370" font-size="20" font-weight="600">Cold Object Storage</text>
+  </g>
+  <g fill="#FFFFFF" font-family="Inter, Arial, sans-serif">
+    <text x="220" y="170" font-size="48" font-weight="700">Data Optimization Architecture</text>
+    <text x="220" y="230" font-size="24" opacity="0.85">NVMe · SSD · Object Storage · Caching · Indexing · Analytics</text>
+  </g>
+</svg>
+

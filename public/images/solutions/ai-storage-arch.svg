@@ -1,0 +1,92 @@
+<svg width="1200" height="700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="storageGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#EF4444;stop-opacity:0.1" />
+      <stop offset="50%" style="stop-color:#FACC15;stop-opacity:0.1" />
+      <stop offset="100%" style="stop-color:#00C2FF;stop-opacity:0.1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="1200" height="700" fill="url(#storageGrad)"/>
+  
+  <text x="600" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#0041C2">
+    AI Storage Architecture
+  </text>
+  
+  <!-- Hot Tier: NVMe -->
+  <rect x="100" y="100" width="200" height="150" rx="10" fill="#EF4444" stroke="#DC2626" stroke-width="2"/>
+  <text x="200" y="135" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">Hot Tier</text>
+  <text x="200" y="160" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">NVMe</text>
+  <text x="200" y="185" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#FFE5E5">Ultra-low latency</text>
+  <text x="200" y="205" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#FFE5E5">&lt; 100μs</text>
+  <text x="200" y="225" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#FFE5E5">&gt; 1M IOPS</text>
+  
+  <!-- Warm Tier: SSD -->
+  <rect x="100" y="300" width="200" height="150" rx="10" fill="#FACC15" stroke="#EAB308" stroke-width="2"/>
+  <text x="200" y="335" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#001B47">Warm Tier</text>
+  <text x="200" y="360" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#001B47">SSD</text>
+  <text x="200" y="385" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#475569">Balanced performance</text>
+  <text x="200" y="405" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#475569">&lt; 1ms</text>
+  <text x="200" y="425" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#475569">100K-500K IOPS</text>
+  
+  <!-- Cold Tier: Object Storage -->
+  <rect x="100" y="500" width="200" height="150" rx="10" fill="#00C2FF" stroke="#0041C2" stroke-width="2"/>
+  <text x="200" y="535" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">Cold Tier</text>
+  <text x="200" y="560" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">S3/Blob</text>
+  <text x="200" y="585" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#E6F7FF">Cost-effective</text>
+  <text x="200" y="605" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#E6F7FF">&lt; 100ms</text>
+  <text x="200" y="625" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#E6F7FF">Archival storage</text>
+  
+  <!-- Indexing Engine -->
+  <rect x="400" y="200" width="200" height="120" rx="10" fill="#00C48C" stroke="#0041C2" stroke-width="2"/>
+  <text x="500" y="235" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Indexing Engine</text>
+  <text x="500" y="260" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#E6FFF5">Elasticsearch</text>
+  <text x="500" y="280" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#E6FFF5">OpenSearch</text>
+  <text x="500" y="300" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#E6FFF5">Full-text search</text>
+  
+  <!-- Caching Layer -->
+  <rect x="400" y="380" width="200" height="120" rx="10" fill="#5A5EFF" stroke="#0041C2" stroke-width="2"/>
+  <text x="500" y="415" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Caching Layer</text>
+  <text x="500" y="440" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#E0E0FF">Redis</text>
+  <text x="500" y="460" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#E0E0FF">Memcached</text>
+  <text x="500" y="480" font-family="Arial, sans-serif" font-size="11" text-anchor="middle" fill="#E0E0FF">In-memory cache</text>
+  
+  <!-- Analytics Pipeline -->
+  <rect x="700" y="290" width="200" height="120" rx="10" fill="#0041C2" stroke="#002B7B" stroke-width="2"/>
+  <text x="800" y="325" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Analytics</text>
+  <text x="800" y="350" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Pipeline</text>
+  <text x="800" y="375" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#B3D9FF">Spark, Flink</text>
+  <text x="800" y="395" font-family="Arial, sans-serif" font-size="13" text-anchor="middle" fill="#B3D9FF">Kafka</text>
+  
+  <!-- Data Flow Arrows -->
+  <line x1="300" y1="175" x2="400" y2="260" stroke="#EF4444" stroke-width="3" marker-end="url(#arrowRed)"/>
+  <line x1="300" y1="375" x2="400" y2="440" stroke="#FACC15" stroke-width="3" marker-end="url(#arrowYellow)"/>
+  <line x1="300" y1="575" x2="700" y2="350" stroke="#00C2FF" stroke-width="3" marker-end="url(#arrowBlue)"/>
+  <line x1="600" y1="320" x2="700" y2="350" stroke="#00C48C" stroke-width="3" marker-end="url(#arrowGreen)"/>
+  <line x1="600" y1="500" x2="700" y2="350" stroke="#5A5EFF" stroke-width="3" marker-end="url(#arrowPurple)"/>
+  
+  <!-- Arrow Markers -->
+  <defs>
+    <marker id="arrowRed" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#EF4444" />
+    </marker>
+    <marker id="arrowYellow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#FACC15" />
+    </marker>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#00C2FF" />
+    </marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#00C48C" />
+    </marker>
+    <marker id="arrowPurple" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#5A5EFF" />
+    </marker>
+  </defs>
+  
+  <!-- Tier Labels -->
+  <text x="50" y="180" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#EF4444">10-20%</text>
+  <text x="50" y="380" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#FACC15">30-40%</text>
+  <text x="50" y="580" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#00C2FF">40-60%</text>
+</svg>
+

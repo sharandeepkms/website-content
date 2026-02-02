@@ -1,0 +1,39 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-zt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B1224"/>
+      <stop offset="100%" stop-color="#0B203A"/>
+    </linearGradient>
+    <linearGradient id="zt-accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0041C2"/>
+      <stop offset="100%" stop-color="#00C48C"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="675" fill="url(#bg-zt)"/>
+  <g opacity="0.45">
+    <circle cx="270" cy="200" r="180" fill="#0041C2"/>
+    <circle cx="940" cy="240" r="220" fill="#00C48C"/>
+    <circle cx="600" cy="560" r="240" fill="#0041C2"/>
+  </g>
+  <g stroke="url(#zt-accent)" stroke-width="2" fill="none" opacity="0.65">
+    <path d="M200 470 C420 370 740 380 980 300"/>
+    <path d="M260 520 C520 400 820 420 1080 340"/>
+  </g>
+  <g fill="#E6F4FF" font-family="Inter, Arial, sans-serif">
+    <text x="200" y="130" font-size="42" font-weight="700">Zero Trust Security</text>
+    <text x="200" y="175" font-size="20" opacity="0.9">Identity · Microsegmentation · Policy · Observability</text>
+  </g>
+  <g fill="none" stroke="#00C48C" stroke-width="2" opacity="0.6">
+    <rect x="220" y="300" width="180" height="70" rx="10"/>
+    <rect x="450" y="280" width="180" height="70" rx="10"/>
+    <rect x="680" y="260" width="180" height="70" rx="10"/>
+    <rect x="910" y="250" width="180" height="70" rx="10"/>
+  </g>
+  <g fill="#E6FFF5" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600">
+    <text x="235" y="340">Identity Provider</text>
+    <text x="465" y="320">Policy Engine</text>
+    <text x="695" y="300">Microsegmentation</text>
+    <text x="925" y="290">Observability</text>
+  </g>
+</svg>
+
